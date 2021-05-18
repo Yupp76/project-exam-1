@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+
+    <title>Nature | Home</title>
+    <meta name="title" content="Nature | Home" />
+    <meta
+      name="description"
+      content="Welcome to Nature blog ! We share all things wild and natural on our blog. Read articles and stories about wildness, adventure, nature connection, unplugging, self reflection."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="url" />
+    <meta property="og:title" content="Nature | Home" />
+    <meta
+      property="og:description"
+      content="Welcome to Nature blog ! We share all things wild and natural on our blog. Read articles and stories about wildness, adventure, nature connection, unplugging, self reflection."
+    />
+    <meta property="og:image" content="/assets/image__bg.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="url" />
+    <meta property="twitter:title" content="Nature | Home" />
+    <meta
+      property="twitter:description"
+      content="Welcome to Nature blog ! We share all things wild and natural on our blog. Read articles and stories about wildness, adventure, nature connection, unplugging, self reflection."
+    />
+    <meta property="twitter:image" content="assets/image__bg.jpg" />
+  </head>
+
+  <body>
+    <div class="nav-menus container">
+      <nav class="flex-between">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="assets/logo__main.svg" alt="Logo: Nature." />
+          </a>
+        </div>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li>
+            <a href="#" class="btn btn--orange">
+              follow us on
+              <span class="fab fa-instagram"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="flex-between mobile-nav">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="assets/logo__main.svg" alt="Logo: Nature." />
+          </a>
+        </div>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="light-bg">
+      <section class="hero-wrapper p-t-5 container">
+        <div class="hero-content --centred">
+          <h1 class="heading1">
+            <span class="--txt-light --block">By discovering nature,</span>
+            <span class="--txt-dark --block">you discover yourself.</span>
+          </h1>
+          <a href="about.html" class="btn btn--gray">Our story</a>
+        </div>
+        <img
+          class="cover-img"
+          src="assets/home__img.jpg"
+          alt="Home cover: forest"
+        />
+      </section>
+
+      <section class="p-t-5 s01 container">
+        <div class="flex-between">
+          <div class="S01-content">
+            <h1 class="heading1">
+              <span class="--txt-light --block">Our last</span>
+              <span class="--txt-light --block">Blog posts</span>
+            </h1>
+            <p class="paragraph">
+              Posuere duis eget quam vulputate libero, erat. Id porttitor
+              mauris, ullamcorper et. Facilisis dui enimlacus.
+            </p>
+          </div>
+          <div class="S01-btns">
+            <button aria-label="prev-button" id="prev" class="btn--gray">
+              <span class="fas fa-arrow-left"></span>
+            </button>
+            <button aria-label="next-button" id="next" class="btn--gray">
+              <span class="fas fa-arrow-right"></span>
+            </button>
+          </div>
+        </div>
+        <div class="S01-cards-wrapper">
+          <div class="S01-cards-carousel">
+            <!-- Cards List Place-->
+          </div>
+        </div>
+
+        <div class="S01-btns-mobile">
+          <button aria-label="prev-button" id="prev-mobile" class="btn--gray">
+            <span class="fas fa-arrow-left"></span>
+          </button>
+          <button aria-label="next-button" id="next-mobile" class="btn--gray">
+            <span class="fas fa-arrow-right"></span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <nav class="flex-between">
+          <div class="nav-logo">
+            <img src="assets/logo__alt.svg" alt="Logo: Nature." />
+          </div>
+          <ul class="flex-between">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <hr />
+        <div class="flex-between">
+          <span>Desgined & developed by Jim Ree</span>
+          <span>Nature. copyright 2021</span>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/home.js"></script>
+  </body>
+</html>

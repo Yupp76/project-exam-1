@@ -1,0 +1,59 @@
+/* SECTION N1 ***************************************************************************************************************/
+
+.S01 .button-wrapper .--centred {
+    display: flex;
+}
+
+.S01 .button-wrapper.p-t-5 {
+    padding-bottom: 4rem;
+}
+
+.S01 .heading1 {    
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #797979;
+}
+
+.S01 .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.S01 .cards-wrapper .card-wrapper {
+    height: 490px;
+    width: 100%;
+}
+
+.S01 .cards-wrapper div.--centred {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    color: #cc4a4a;
+    font-size: 20px;
+    background: white;
+    font-weight: 800;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1200px) {   
+    .S01 .cards-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+
+@media screen and (max-width: 900px) {   
+    .S01 .cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+
+@media screen and (max-width: 600px) {   
+    .S01 .cards-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    } 
+}

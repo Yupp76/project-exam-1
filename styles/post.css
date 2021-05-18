@@ -1,0 +1,52 @@
+/* SECTION N1 ***************************************************************************************************************/
+
+.S01 {
+    background-color: white;
+}
+
+.S01-cover-wrapper {
+  height: 450px;
+  width: 100%;
+}
+
+.S01-cover-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.S01-content-wrapper {
+    padding: 2rem;
+}
+
+.S01-post-wrapper {
+    display: none;
+    min-height: 500px;
+    width: 100%;
+}
+
+.S01-post-wrapper span {    
+    color: #cc4a4a;
+}
+
+.S01-content-wrapper p {
+    color: #393939;    
+    margin: 1rem auto 0 0;
+    max-width: 1100px;
+}
+
+@media screen and (max-width: 768px) {
+  .S01-cover-wrapper {
+    height: 350px;
+  }
+  .S01-content-wrapper {
+      padding: 2rem 1.5rem;
+  }  
+}
+
+@media screen and (max-width: 500px) {
+  .S01-cover-wrapper {
+    height: 300px;
+  }
+}

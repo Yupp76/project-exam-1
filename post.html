@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/post.css" />
+
+    <title>Nature | Post</title>
+  </head>
+
+  <body>
+    <div class="nav-menus container">
+      <nav class="flex-between">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="assets/logo__main.svg" alt="Logo: Nature." />
+          </a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li>
+            <a href="#" class="btn btn--orange">
+              follow us on
+              <span class="fab fa-instagram"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="flex-between mobile-nav">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="assets/logo__main.svg" alt="Logo: Nature." />
+          </a>
+        </div>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="S01 container">
+        <div id="loading-spinner">
+          <div class="fa-3x">
+            <span class="fas fa-circle-notch fa-spin"></span>
+          </div>
+        </div>
+        <div id="wrapper" class="S01-post-wrapper">
+          <div class="S01-cover-wrapper">
+            <img id="cover" src="#" alt="" />
+          </div>
+          <div class="S01-content-wrapper">
+            <h1 id="title" class="heading2"></h1>
+            <div id="content" class="S01-content-text paragraph"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <nav class="flex-between">
+          <div class="nav-logo">
+            <img src="assets/logo__alt.svg" alt="Logo: Nature." />
+          </div>
+          <ul class="flex-between">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <hr />
+        <div class="flex-between">
+          <span>Desgined & developed by Jim Ree</span>
+          <span>Nature. copyright 2021</span>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/post.js"></script>
+  </body>
+</html>

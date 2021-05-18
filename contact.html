@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+
+    <title>Nature | Contact</title>
+    <meta name="title" content="Nature | Contact" />
+    <meta
+      name="description"
+      content="Nature Blog — Contact Page. You have question or you want provide feedback about us? Send usa message !"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="url" />
+    <meta property="og:title" content="Nature | Contact" />
+    <meta
+      property="og:description"
+      content="Nature Blog — Contact Page. You have question or you want provide feedback about us? Send usa message !"
+    />
+    <meta property="og:image" content="/assets/image__bg.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="url" />
+    <meta property="twitter:title" content="Nature | Contact" />
+    <meta
+      property="twitter:description"
+      content="Nature Blog — Contact Page. You have question or you want provide feedback about us? Send usa message !"
+    />
+    <meta property="twitter:image" content="assets/image__bg.jpg" />
+  </head>
+
+  <body>
+    <div class="nav-menus container">
+      <nav class="flex-between">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="assets/logo__main.svg" alt="Logo: Nature." />
+          </a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contact.html" class="active">Contact</a></li>
+          <li>
+            <a href="#" class="btn btn--orange">
+              follow us on
+              <span class="fab fa-instagram"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="flex-between mobile-nav">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="assets/logo__main.svg" alt="Logo: Nature." />
+          </a>
+        </div>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="dark-bg">
+      <section class="S01 container p-t-5">
+        <div class="form-holder --centred">
+          <span class="heading4 --block --txt-light">Contact</span>
+          <h1 class="heading2">Say Hello</h1>
+          <p class="paragraph">
+            If you want to reach us please contact us here and we will call you
+            or send you a email as fast as we can
+          </p>
+          <div id="form-notifications">
+            <!-- form notification come here -->
+          </div>
+          <form>
+            <label for="name">Fullname</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="firstname lastname"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@email.com"
+            />
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="subject"
+            />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="message"
+            ></textarea>
+            <button id="button" class="btn--orange btn" type="submit">
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <nav class="flex-between">
+          <div class="nav-logo">
+            <img src="assets/logo__alt.svg" alt="Logo: Nature." />
+          </div>
+          <ul class="flex-between">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <hr />
+        <div class="flex-between">
+          <span>Desgined & developed by Jim Ree</span>
+          <span>Nature. copyright 2021</span>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+/* SECTION N1 *******************************************************************************************/
+
+.S01.container.p-t-5 {
+    padding-bottom: 4rem;
+}
+
+.S01 .form-holder {
+    max-width: 500px;
+    background: white;
+    padding: 3rem;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    width: 100%;
+    box-shadow: 0px 19px 49px rgba(0, 0, 0, 0.12),
+      0px 7.93775px 20.471px rgba(0, 0, 0, 0.104957),
+      0px 4.2439px 10.9448px rgba(0, 0, 0, 0.091571),
+      0px 2.37909px 6.13556px rgba(0, 0, 0, 0.0798478),
+      0px 1.26352px 3.25855px rgba(0, 0, 0, 0.0690709),
+      0px 0.525779px 1.35596px rgba(0, 0, 0, 0.0542688);
+}
+
+.S01 form {
+    margin: 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.S01 form input,
+.S01 form textarea {
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    font-family: var(--sec-font);
+}
+
+.S01 form input::placeholder,
+.S01 form textarea::placeholder {
+    color: darkgray;
+    font-family: var(--sec-font);
+}
+
+.S01 form label {
+    font-family: var(--sec-font);
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.S01 div#form-notifications span {
+    margin: 1rem 0;
+    color: #eb2213;
+}
+
+.S01 form label[for="name"]:after, 
+.S01 form label[for="email"]:after, 
+.S01 form label[for="message"]:after {
+    content: "*";
+    color: #eb2213;
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.S01 form label:first-child {
+    margin-top: 0;
+}
+
+.S01 form textarea {
+    resize: none;
+}
+
+.S01 form button {
+    margin-top: 2rem;
+    width: 200px;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .S01 .form-holder {
+        padding: 2rem 1.5rem;
+    }    
+    
+    .S01 form button {
+        width: 100%;
+        max-width: unset;
+    }
+}
+

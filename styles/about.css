@@ -1,0 +1,40 @@
+/* SECTION N1 **************************************************************************************************/
+
+.S01.container.p-t-5 {
+  padding-bottom: 2rem !important;
+}
+
+.S01 .grid-2 {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  grid-template-columns: 1.5fr 1fr;
+  box-shadow: 0px 19px 49px rgba(0, 0, 0, 0.12),
+    0px 7.93775px 20.471px rgba(0, 0, 0, 0.104957),
+    0px 4.2439px 10.9448px rgba(0, 0, 0, 0.091571),
+    0px 2.37909px 6.13556px rgba(0, 0, 0, 0.0798478),
+    0px 1.26352px 3.25855px rgba(0, 0, 0, 0.0690709),
+    0px 0.525779px 1.35596px rgba(0, 0, 0, 0.0542688);
+}
+
+.S01 .grid-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.S01 .grid-content {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .S01 .grid-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .S01 .grid-2 img {
+    height: 270px;
+  }
+}
