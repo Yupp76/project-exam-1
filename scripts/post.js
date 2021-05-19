@@ -10,8 +10,6 @@ const headMeta = document.querySelector("head");
 const query = new URLSearchParams(window.location.search);
 const postID = query.get("id");
 
-console.log(postID);
-
 /**
  * Renders error message if failed to retrieve wp data
  * @param {HTMLElement} parentElem
@@ -99,6 +97,7 @@ const getBlogPosts = async () => {
 
     loadingSpinner.style.display = "none";
     blogPostWrapper.style.display = "block";
+    initModal();
   } catch (err) {
     // shows an error message
     blogPostWrapper.innerHTML = "";
@@ -112,3 +111,28 @@ const getBlogPosts = async () => {
 };
 
 getBlogPosts();
+
+/**
+ * init the image modal functionality
+ */
+function initModal() {
+  const contentWrapper = document.querySelector(".S01-content-wrapper");
+  const modalWrapper = document.querySelector("#modal-wrapper");
+  const modalImg = document.querySelector("#modal-img");
+  const contentImgs = document.querySelectorAll(".S01-content-wrapper img");
+
+  contentImgs.forEach((img) => {
+    img.addEventListener("click", (e) => {
+      e.stopPropagation();
+      modalImg.setAttribute("src", e.target.src);
+      contentWrapper.classList.add("open");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  modalWrapper.addEventListener("click", () => {
+    modalImg.setAttribute("src", "#");
+    contentWrapper.classList.remove("open");
+    document.body.style.overflow = "initial";
+  });
+}

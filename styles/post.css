@@ -20,6 +20,40 @@
     padding: 2rem;
 }
 
+.S01-content-wrapper .modal {
+  display: none;
+}
+
+.S01-content-wrapper.open .modal {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  top: 0;
+  background: #000000cc;
+  left: 0;
+  padding: 1rem;
+}
+
+.S01-content-wrapper.open .modal img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 1rem;
+}
+
+.S01-content-wrapper .modal {
+  width: 100%;
+}
+
+.S01-content-wrapper img {
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0;
+}
+
 .S01-post-wrapper {
     display: none;
     min-height: 500px;
